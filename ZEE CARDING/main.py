@@ -1,0 +1,42 @@
+from pyrogram import Client
+import json
+from FUNC.server_stats import send_server_alert  # Make sure this function exists
+# Load config
+DATA = {
+    "API_ID": 23814021,  # Replace with your actual API ID
+    "API_HASH": "20ee8fa1bb2d8ba536f2082a2727ddd7",  # Replace with your actual API Hash
+    "BOT_TOKEN": "7869745797:AAHgI6VVQTRLXn26M7RTzuhAAberumimgLw"
+}
+
+API_ID = int(DATA["API_ID"])
+API_HASH = DATA["API_HASH"]
+BOT_TOKEN = DATA["BOT_TOKEN"]
+
+# Plugin path
+plugins = dict(root="BOT")
+
+# Optional user client (for scraping or admin tasks)
+user = Client(
+    "Scrapper",
+    api_id=API_ID,
+    api_hash=API_HASH
+)
+
+# Bot client
+bot = Client(
+    "MY_BOT",
+    api_id=API_ID,
+    api_hash=API_HASH,
+    bot_token=BOT_TOKEN,
+    plugins=plugins
+)
+
+def start_bot():
+    print("✅ Bot is active and ready.")
+    print("📢 NOW START BOT ONCE MY MASTER")
+    # Optional: send alert when bot starts
+    # send_server_alert()
+    bot.run()
+
+if __name__ == "__main__":
+    start_bot()

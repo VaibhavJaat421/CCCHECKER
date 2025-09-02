@@ -1,0 +1,1022 @@
+Traceback (most recent call last):
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/BOT/helper/start and commands.py", line 191, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+                  ^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2890, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2838, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1827, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68b68121498fad4094f48d4f, topology_type: Unknown, servers: [<ServerDescription ('set-your-mongo-url', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/BOT/helper/start and commands.py", line 191, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+                  ^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2890, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2838, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1827, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68b68121498fad4094f48d4f, topology_type: Unknown, servers: [<ServerDescription ('set-your-mongo-url', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/BOT/helper/start and commands.py", line 191, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+                  ^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2890, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2838, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1827, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68b68121498fad4094f48d4f, topology_type: Unknown, servers: [<ServerDescription ('set-your-mongo-url', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/BOT/helper/start and commands.py", line 142, in cmd_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+                  ^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2890, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2838, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1827, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68b68121498fad4094f48d4f, topology_type: Unknown, servers: [<ServerDescription ('set-your-mongo-url', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/TOOLS/check_all_func.py", line 15, in check_all_thing
+    regdata   = await getuserinfo(user_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+                  ^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2890, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2838, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1827, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68b68121498fad4094f48d4f, topology_type: Unknown, servers: [<ServerDescription ('set-your-mongo-url', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/TOOLS/check_all_func.py", line 15, in check_all_thing
+    regdata   = await getuserinfo(user_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+                  ^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2890, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2838, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1827, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68b68121498fad4094f48d4f, topology_type: Unknown, servers: [<ServerDescription ('set-your-mongo-url', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/TOOLS/check_all_func.py", line 15, in check_all_thing
+    regdata   = await getuserinfo(user_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+                  ^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2890, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2838, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1827, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68b68121498fad4094f48d4f, topology_type: Unknown, servers: [<ServerDescription ('set-your-mongo-url', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/TOOLS/check_all_func.py", line 15, in check_all_thing
+    regdata   = await getuserinfo(user_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+                  ^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2890, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2838, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1827, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68b68121498fad4094f48d4f, topology_type: Unknown, servers: [<ServerDescription ('set-your-mongo-url', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/TOOLS/check_all_func.py", line 15, in check_all_thing
+    regdata   = await getuserinfo(user_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+                  ^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2890, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2838, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1827, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68b68121498fad4094f48d4f, topology_type: Unknown, servers: [<ServerDescription ('set-your-mongo-url', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/BOT/helper/start and commands.py", line 191, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+                  ^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2890, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2838, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1827, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68b68840bcd7db8a16e22d0c, topology_type: Unknown, servers: [<ServerDescription ('set-your-mongo-url', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/TOOLS/check_all_func.py", line 15, in check_all_thing
+    regdata   = await getuserinfo(user_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+                  ^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2890, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2838, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1827, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68b68840bcd7db8a16e22d0c, topology_type: Unknown, servers: [<ServerDescription ('set-your-mongo-url', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/TOOLS/check_all_func.py", line 15, in check_all_thing
+    regdata   = await getuserinfo(user_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+                  ^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2890, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2838, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1827, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68b68840bcd7db8a16e22d0c, topology_type: Unknown, servers: [<ServerDescription ('set-your-mongo-url', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/BOT/helper/info.py", line 8, in cmd_info
+    regdata = await getuserinfo(user_id)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+                  ^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2890, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2838, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1827, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68b68840bcd7db8a16e22d0c, topology_type: Unknown, servers: [<ServerDescription ('set-your-mongo-url', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/BOT/helper/credits.py", line 9, in cmd_credit
+    regdata = await getuserinfo(user_id)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+                  ^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2890, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2838, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1827, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68b68840bcd7db8a16e22d0c, topology_type: Unknown, servers: [<ServerDescription ('set-your-mongo-url', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/BOT/helper/info.py", line 8, in cmd_info
+    regdata = await getuserinfo(user_id)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+                  ^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2890, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2838, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1827, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68b68840bcd7db8a16e22d0c, topology_type: Unknown, servers: [<ServerDescription ('set-your-mongo-url', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/BOT/helper/info.py", line 8, in cmd_info
+    regdata = await getuserinfo(user_id)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+                  ^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2890, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2838, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1827, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68b68840bcd7db8a16e22d0c, topology_type: Unknown, servers: [<ServerDescription ('set-your-mongo-url', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/BOT/helper/credits.py", line 9, in cmd_credit
+    regdata = await getuserinfo(user_id)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CARDING TOOLS/CHECKER/ZEE CARDING/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+                  ^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2890, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2838, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1827, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68b68840bcd7db8a16e22d0c, topology_type: Unknown, servers: [<ServerDescription ('set-your-mongo-url', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('set-your-mongo-url:27017: [Errno 7] No address associated with hostname (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+
