@@ -1,17 +1,17 @@
-name: Auto Deploy Bot
+name: Run Telegram Bot
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   run-bot:
     runs-on: ubuntu-latest
-    env:
-      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
     steps:
-      - name: Checkout code
+      - name: Checkout repo
         uses: actions/checkout@v3
 
       - name: Set up Python
@@ -20,7 +20,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-  run: pip install -r "ZEE CARDING/requirements.txt"
+        run: pip install -r "ZEE CARDING/requirements.txt"
 
       - name: Run bot
-  run: python "ZEE CARDING/main.py"
+        run: python "ZEE CARDING/main.py"
